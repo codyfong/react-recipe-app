@@ -55,23 +55,24 @@ const onSubmit = (values, actions) => {
           <input type="text" onChange={handleChange} placeholder="Cook Time" name="cookTime" value={values.cookTime}/>
           <input type="text" onChange={handleChange} placeholder="Serves" name="serves" value={values.serves}/>
         </div>
-        <div className="form-1">
-          <div>
+        <div className="form-2" id="ingredient-container">
+          <div className="form-1" id="ingredient">
           <input type="text" onChange={(e) => setName(e.target.value)} placeholder="Ingredient" value={name}/>
           <input type="text" onChange={(e) => setQuantity(e.target.value)} placeholder="Quantity" value={quantity}/>
           </div>
-          <div>
+          <div className="ingredient-list-container">
             <ul>
           {ingredients.map((ele)=>{
             return(<li>{ele.quantity} {ele.name}</li>)
           })}
             </ul>
           </div>
-          <div>
-            <button type="button" onClick={addIngredient}>Add Another</button>
-          </div>
+
         </div>
         <div>
+          <div className="add-another">
+            <button type="button" onClick={addIngredient}>Add Another</button>
+          </div>
           <textarea onChange={handleChange} name="instructions" value={values.instructions} cols="30" rows="10" placeholder="What are the instructions?"></textarea>
           <button>Save</button>
         </div>
