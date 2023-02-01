@@ -1,0 +1,270 @@
+/* --------- This is CSS Reset Code --------- */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* --------- Begin your CSS Below here --------- */
+body{
+	margin-bottom: 150px;
+}
+nav {
+	height: 100%;
+}
+header {
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	color: white;
+	display: flex;
+	width: 100%;
+	height: 60px;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #db7533;
+	padding: 0 50px;
+	box-sizing: border-box;
+}
+
+header button{
+	margin: 0 10px;
+	color: white;
+	background-color: #db7533;
+	height: 100%;
+	border: none;
+	font-size: 15px
+}
+header button:hover{
+	background-color: #d39166;
+	box-shadow: 0px 3px 5px 0.5px black;
+}
+
+footer {
+	height: 150px;
+	background-color: #3e3e3e;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	bottom: 0vh;
+	box-sizing: border-box;
+	padding: 10px 50px;
+	
+}
+.icon-container{
+	display:flex;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+	gap: 10px
+}
+footer a {
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	height: 50px;
+	width: 50px;
+	background-color: #578a8b;
+	border-radius: 50%;
+}
+footer h5 {
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	color: white;
+	color:white;
+	padding: 10px;
+	text-align: center;
+}
+.ad-banner{
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 350px;
+}
+.ad-banner div{
+	width: 60%;
+	display: flex;
+    flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	
+}
+.ad-banner h1{
+	color:#db7533;
+	font-size: 50px;
+	font-weight: bold;
+}
+.ad-banner h3{
+	color:white;
+	text-align: center;
+}
+.ad-banner button{
+	color:white;
+	text-align: center;
+	background-color: #578a8b;
+	border: none;
+	height: 40px;
+	width: 125px;
+}
+
+.ad-banner button:hover{
+	background-color: #7cc9ca;
+}
+
+.search-div{
+	display: flex;
+	margin: 30px auto;
+	background-color: #f6dfd1;
+	height: 35px;
+	width: 420px;
+	border: none;
+	border-radius: 18px;
+	padding: 2px
+}
+.search-div input{
+border:none;
+background-color: transparent;
+font-size: 20px;
+width: 100%
+}
+.search-div input:focus{
+	outline: none;
+}
+
+.recipe-container{
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	gap: 50px
+}
+
+
+.recipe-card{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 300px;
+	text-align: center;
+	gap: 10px;
+	padding-bottom: 20px;
+	box-shadow: 0px 3px 10px 0.5px black;
+}
+
+.recipe-card img{
+	width: 100%;
+}
+.recipe-card div{
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	font-size: 20px;
+}
+.recipe-card button{
+	color: white;
+	align-self: center;
+	background-color: #578a8b;
+	border: none;
+	width: 100px;
+	height: 35px;
+	border-radius: 3px;
+}
+.recipe-card button:hover{
+	background-color: #7cc9ca;
+}
+.detail-banner{
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 350px;
+}
+.detail-banner h1{
+	color:#db7533;
+	font-size: 50px;
+	font-weight: bold;
+}
+.detail-container{
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	align-items: flex-start;
+	justify-content: center;
+	display:flex;
+	flex-direction: row;
+	height: 50vh;
+	gap: 150px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+.detail-container h1{
+	text-align: center;
+	font-size: 25px;
+}
+.detail-recipe-ingredient{
+	box-shadow: 0px 3px 5px 0.5px black;
+	display:flex;
+	flex-direction: column;
+	gap: 10px;
+	width: 200px;
+	padding: 40px;
+}
+.detail-recipe-container{
+	display:flex;
+	flex-direction: column;
+	gap: 10px;
+	width: 200px;
+}
+.detail-ingredient-container{
+	display:flex;
+	flex-direction: column;
+	gap: 10px;
+	width: 200px;
+}
+
+.detail-instructions-container{
+	box-shadow: 0px 3px 5px 0.5px black;
+	display:flex;
+	flex-direction: column;
+	gap: 10px;
+	width: 450px;
+	padding: 40px;
+}
+
+.form-section{
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+}
+
+.form-section h1{
+	font-size: 25px;
+}
+.form-div{
+
+}
+.form-1{
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+}
+.radio-div{
+	flex-direction: row;
+}
